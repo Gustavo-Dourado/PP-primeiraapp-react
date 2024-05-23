@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#banner{
+    background-image: url('https://miro.medium.com/focal/1200/632/49/44/1*a2-VT6PuzO_wXiwR3_M1TQ.jpeg');
+    background-position: 50% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    margin-top: 120px;
+}
+
+#trailer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    row-gap: 30px;
+}
+
+#trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    text-align: justify;
+}
+
+#button-ingresso {
+    width: 200px;
+    height: 40px;
+    background-color: #228038;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Letra mais grossa */
+    border: none; /* Sem borda */
+    outline: none; /* Sem linha no button */
+    margin-top: 25px;
+}
+
+#button-ingresso:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.card-actor-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card-content {
+    width: 90%;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://rare-gallery.com/mocahbig/1377884-neo-the-matrix-resurrections-2021-movie-keanu-reeves.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner-2 {
+    background-image: url('https://i.pinimg.com/736x/55/71/c3/5571c38dfa43b192a9c7ce5bd2276e36.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner-3 {
+    background-image: url('https://www.refinery29.com/images/10817699.jpg');
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 1150px){
+    .card-content {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 768px){
+
+    #banner{
+        background-size: auto;
+    }
+
+    #trailer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #trailer{
+        width: 90%;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer {
+        width: 100%;
+        height: auto;
+    }
+
+    #sinopse {
+        width: 95%;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        margin-top: 50px;
+    }
+}

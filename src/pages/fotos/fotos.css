@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#descrito {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#texto-descrito {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+.display-fotos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 20px;
+    margin: 50px auto 0px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: whitesmoke;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.foto-1 {
+    background-image: url('../../assets/foto1.jpg');
+}
+.foto-2 {
+    background-image: url('../../assets/foto2.jpg');
+}
+.foto-3 {
+    background-image: url('../../assets/foto3.png');
+    background-position: 35% 75%;
+}
+.foto-4 {
+    background-image: url('../../assets/foto4.png');
+    background-position: 38% 10%;
+}
+.foto-5 {
+    background-image: url('../../assets/foto5.png');
+    background-position: 35% 0%;
+}
+.foto-6 {
+    background-image: url('../../assets/foto6.jpg');
+    background-position: 35% 65%;
+}
+.foto-7 {
+    background-image: url('../../assets/foto7.jpg');
+    background-position: 45% 65%;
+}
+.foto-8 {
+    background-image: url('../../assets/foto8.jpg');
+}
+.foto-9 {
+    background-image: url('../../assets/foto9.jpg');
+}
+
+@media(max-width: 1150px){
+    .display-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .display-fotos{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+}
