@@ -47,7 +47,7 @@ function Comentarios() {
                 </div>
 
                 <div className="box-content"> 
-                    <div className="perfil"> <b>Lisa Sanches</b>
+                    <div className="perfil"> <b>Lisa Kudrow</b>
                         <img className="avatar" src={Avatar3} alt='avatar-pessoa3'/>
                         <img className="estrelas" src={Estrelas} alt='avaliacao estrelas'/>
                     </div>
